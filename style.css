@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.body {
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+}
+
+.body .left {
+    display: grid;
+    grid-template-rows: 100px 350px 200px;
+    gap: 30px;
+    height: 100%;
+    overflow-y: hidden;
+    background-color: coral;
+}
+.body .left div {
+    padding-left: 20px;
+    width: 100%;
+    gap: 10px;
+}
+.body .left .logo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    gap: 10px;
+}
+.body .left .midsec {
+    display: grid;
+}
+.body .left .item {
+    display: grid;
+    color: white;
+    font-size: 18px;
+    grid-template: 1fr / 30px 100px;
+}
+.body .left .endsec {
+    display: grid
+}
+
+
+.body .right {
+    display: grid;
+    gap: 0;
+    grid-template-rows: 200px 950px;
+    height: 100%;
+}
+.body .right .up {
+    display: grid;
+    grid-template-rows: 80px 110px;
+    height: 200px;
+    box-shadow: 0px 2px 5px gray;
+    z-index: 1;
+}
+.body .right .up .up-up {
+    display: grid;
+    grid-template-columns: 6fr 1fr 1fr 2fr;
+}
+.body .right .up .up-up .searchbar {
+    margin-left: 30px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 10% 90%;
+}
+.body .right .up .up-up .searchbar .search {
+    border-radius: 30px;
+    height: 80%;
+}
+.body .right .up .up-up .notifications {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.body .right .up .up-up .pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.body .right .up .up-up .pic img{
+    height:70px;
+    border-radius: 20px;
+}
+.body .right .up .up-up .description {
+    font-size: 25px;
+}
+
+.body .right .up .up-down {
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    gap: 30px;
+}
+.body .right .up .up-down .leftu {
+    margin-left: 30px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 4fr;
+    gap: 20px;
+}
+.body .right .up .up-down .leftu p {
+    font-size: 15px;
+}
+.body .right .up .up-down .leftu h3 {
+    font-size: 25px;
+}
+.body .right .up .up-down .leftu img {
+    width: 100px;
+    border-radius: 30px;
+}
+.body .right .up .up-down .rightu {
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.body .right .up .up-down .rightu .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: coral;
+    color: white;
+    font-size: 17px;
+    width: 120px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.body .right .down {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    height: 100%;
+}
+.body .right .down .leftd {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.body .right .down .leftd > h3 {
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.body .right .down .leftd .contentd {
+    height: auto;
+    gap: 15px;
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.body .right .down .leftd .contentd .card {
+    position: relative;
+    width: 45%;
+    height: 250px;
+    background-color: white;
+    border-left: 10px solid goldenrod;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 3px 3px 10px gray;
+}
+.body .right .down .leftd .contentd div {
+    margin: 10px;
+}
+.body .right .down .leftd .contentd .card .text {
+    position: absolute;
+    top: 10px;
+}
+.body .right .down .leftd .contentd .card .text h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.body .right .down .leftd .contentd .card .text p {
+    font-size: 15px;
+    color: gray;
+}
+.body .right .down .leftd .contentd .card .icons {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.body .right .down .rightd {
+    margin: 10px 30px;
+    display: inline-grid;
+    grid-template: 400px 400px / 100%;
+    gap: 30px;
+}
+.body .right .down .rightd h3 {
+    margin: 10px;
+    font-size: 20px;
+}
+.body .right .down .rightd p {
+    font-size: 13px;
+    color: gray;
+}
+.body .right .down .rightd .ancard hr {
+    margin: 10px 0;
+    width: 85%;
+    height: 2px;
+    color: gray;
+}
+
+.body .right .down .rightd .ancard {
+    width: 99%;
+    height: 350px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 10px gray;
+}
+.body .right .down .rightd .ancard p {
+    margin-left: 15px;
+}
+.body .right .down .rightd .ancard h4 {
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.body .right .down .rightd .trencard {
+    width: 99%;
+    background-color: white;
+    border-radius: 10px;
+    display: inline-grid;
+    grid-template: 70px 70px 70px 70px / 1fr 3fr;
+    padding: 10px;
+    gap: 10px;
+    grid-template-areas: 
+    "pic1 des1"
+    "pic2 des2"
+    "pic3 des3"
+    "pic4 des4";
+    align-items: center;
+    box-shadow: 3px 3px 10px gray;
+}
+#pic1 {
+    grid-area: pic1;
+}
+#pic2 {
+    grid-area: pic2;
+}
+#pic3 {
+    grid-area: pic3;
+}
+#pic4 {
+    grid-area: pic4;
+}
+#des1 {
+    grid-area: des1;
+}
+#des2 {
+    grid-area: des2;
+}
+#des3 {
+    grid-area: des3;
+}
+#des4 {
+    grid-area: des4;
+}
+
+.body .right .down .rightd .trencard .desroom {
+    display: flex;
+    flex-direction: column;
+}
+
+.body .right .down .rightd .trencard img {
+    width: 80%;
+    border-radius: 50%;
+}
+
